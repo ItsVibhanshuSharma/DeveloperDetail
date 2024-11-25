@@ -28,20 +28,7 @@ export const topViewHeight = 70;
 export const screenWidth = Dimensions.get('window').width;
 export const screenHeight = Dimensions.get('window').height;
 
-const fontScale = PixelRatio.getFontScale();
 export const getFontSize = (size: number) => {
   return size
-  // return Platform.OS == 'android' ? size / fontScale : size;
 };
 
-// export const getFontSize = (originalSize:number) => {
-//   if(PixelRatio.get() < 1.5) {
-//       return (originalSize * 0.5 ) / PixelRatio.get()
-//   }else if(PixelRatio.get() >= 1.5 && PixelRatio.get() < 2.5) {
-//       return (originalSize * 1.5 ) / PixelRatio.get()
-//   }else if(PixelRatio.get() >= 2.5){
-//       return (originalSize * 2.5 ) / PixelRatio.get()
-//   }else{
-//       return originalSize
-//   }
-// }
